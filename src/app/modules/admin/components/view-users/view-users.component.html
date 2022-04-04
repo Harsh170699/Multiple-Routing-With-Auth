@@ -1,0 +1,15 @@
+<p>view-users works!</p>
+
+<p>User status: {{ userStatus }}</p>
+
+<ul>
+    <li *ngFor="let user of listUsers$">
+        <p>{{ user.name }} | {{ user.email }}</p> 
+    </li>
+</ul>
+
+<h3>User Details</h3>
+
+<div *ngIf="userMsg" class="status">{{ userMsg }}</div>
+
+<p>{{ userDetails.name }} | {{ userDetails.email }}</p>
